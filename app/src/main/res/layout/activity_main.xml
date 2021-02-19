@@ -1,0 +1,128 @@
+<?xml version="1.0" encoding="utf-8"?>
+<ScrollView
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    >
+    <LinearLayout
+
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        tools:context=".MainActivity"
+        android:orientation="vertical">
+    <!--     this is partition-->
+        <EditText
+            android:id="@+id/uname"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:hint="Enter your good name"
+            android:layout_marginHorizontal="10dp"
+            android:layout_marginVertical="10dp"/>
+        <TextView
+            android:id="@+id/quantity"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Quantity"
+            android:textStyle="bold"
+            android:textSize="20dp"
+            android:padding="10dp"
+            android:textAllCaps="true"
+            android:layout_margin="10dp"/>
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginHorizontal="10dp">
+            <ImageButton
+                android:id="@+id/minusButton"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:src="@drawable/minus_icon"
+                android:onClick="decrement"/>
+
+            <TextView
+                android:id="@+id/quantity_value"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="1"
+                android:padding="10dp"
+                android:textStyle="bold"
+                android:textSize="20dp"
+               />
+            <ImageButton
+                android:id="@+id/plusButton"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:src="@drawable/plus_icon"
+                android:onClick="increment"/>
+
+
+
+        </LinearLayout>
+
+        <TextView
+            android:id="@+id/additionalinfo"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="tOPPINGS"
+            android:textSize="20dp"
+            android:textAllCaps="true"
+            android:layout_marginHorizontal="10dp"
+            android:layout_marginTop="6dp"
+            android:padding="10dp"/>
+        <CheckBox
+            android:id="@+id/whippedcreame"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="6dp"
+            android:text="whipped Creame"
+            android:layout_marginHorizontal="10dp"
+            android:padding="10dp"/>
+        <CheckBox
+            android:id="@+id/chocolate"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="chocolate"
+            android:layout_marginTop="6dp"
+            android:padding="10dp"
+            android:layout_marginHorizontal="10dp"/>
+        <TextView
+            android:id="@+id/price_text"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Price"
+            android:textStyle="bold"
+            android:textSize="20dp"
+            android:textAllCaps="true"
+            android:layout_margin="10dp"
+            android:padding="5dp"/>
+        <TextView
+            android:id="@+id/price_value"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="$10"
+            android:padding="10dp"
+            android:layout_marginHorizontal="10dp"
+            android:textStyle="bold"/>
+
+        <Button
+            android:id="@+id/btn"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_margin="10dp"
+            android:background="#000000"
+            android:text="@string/send_meassage"
+            android:textAllCaps="true"
+            android:textColor="#ffffff"
+            android:onClick="submit"
+            />
+
+
+
+
+
+
+    </LinearLayout>
+</ScrollView>
